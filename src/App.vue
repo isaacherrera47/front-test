@@ -2,6 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sui-button primary>Primary</sui-button>
+    <sui-button secondary>Secondary</sui-button>
   </div>
 </template>
 
