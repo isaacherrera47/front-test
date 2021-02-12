@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <sui-button primary>Primary</sui-button>
-    <sui-button secondary>Secondary</sui-button>
+    <sui-container>
+      <sui-header dividing>Image uploader</sui-header>
+      <UploadForm/>
+      <sui-header dividing>Gallery (uploaded images)</sui-header>
+      <Gallery/>
+    </sui-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UploadForm from "./components/UploadForm";
+import Gallery from "@/components/Gallery";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UploadForm,
+    Gallery
   }
 }
 </script>
